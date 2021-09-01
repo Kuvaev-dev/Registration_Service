@@ -9,7 +9,7 @@ namespace RegistrationService
     public class Service1 : IService1
     {
         string connectionString = "Data Source=SQL5080.site4now.net;Initial Catalog=db_a79439_regdb;User Id=db_a79439_regdb_admin;Password=qwerty009";
-        public string Reg(User new_user)
+        public string Registrate(User new_user)
         {
             string result = string.Empty;
             using (IDbConnection db = new SqlConnection(connectionString))
